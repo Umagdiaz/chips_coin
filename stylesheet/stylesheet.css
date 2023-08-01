@@ -363,7 +363,7 @@
         width: 100%;
         min-width: 320px;
         height: auto;
-        padding-bottom: 70px;
+        margin-bottom: 70px;
     }
 
     .plans--title {
@@ -397,15 +397,16 @@
         overflow-x: scroll;
         overscroll-behavior-x: contain;
         scroll-snap-type: x proximity;
+        padding: 20px;
     }
 
     .plans-container--card {
         position: relative;
-        width: 80%;
+        width: 70%;
         scroll-snap-align: center;
         min-width: 190px;
         max-width: 300px;
-        height: auto;
+        height: 250px;
         margin: 50px 5px 0; 
         padding: 0 15px;
         background-color: var(--just-white);
@@ -418,28 +419,6 @@
         position: relative;
     }
 
-    .slider-container .arrow{
-        position: absolute;
-        bottom: calc(60% );
-        z-index: 1;
-        display: inline-block;
-        background-repeat: no-repeat;
-        width: 12px;
-        height: 12px;
-    }
-
-    .slider-container #left-black-arrow {
-        left: calc(100% - 75%);
-        background-image: url('/assets/icons/mdi_keyboard_arrow_down.svg');
-        background-position: center; 
-    }
-
-    .slider-container #right-black-arrow{
-        right:  calc(100% - 75%);
-        background-image: url('/assets/icons/right-arrow.svg');
-        background-position: center;
-    }
-    
     .recommended {
         position: absolute;
         width: 120px;
