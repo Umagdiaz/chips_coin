@@ -363,9 +363,155 @@
         width: 100%;
         min-width: 320px;
         height: auto;
-        
-        
+        padding-bottom: 70px;
     }
+
+    .plans--title {
+        width: 90%;
+        min-width: 288px;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .plans--title h2 {
+        padding-top: 50px;
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 2.6rem;
+        color: var(--black);
+    }
+
+    .plans--title p {
+        padding-top: 30px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+        color: var(--grey-text);
+    }
+
+    .plans-container--slider{
+        display:flex;
+        gap: 10px;
+        height: auto;
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+    }
+
+    .plans-container--card {
+        position: relative;
+        width: 80%;
+        scroll-snap-align: center;
+        min-width: 190px;
+        max-width: 300px;
+        height: auto;
+        margin: 50px 5px 0; 
+        padding: 0 15px;
+        background-color: var(--just-white);
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+    }
+
+    .slider-container{
+        width: 100%;
+        position: relative;
+    }
+
+    .slider-container .arrow{
+        position: absolute;
+        bottom: calc(60% );
+        z-index: 1;
+        display: inline-block;
+        background-repeat: no-repeat;
+        width: 12px;
+        height: 12px;
+    }
+
+    .slider-container #left-black-arrow {
+        left: calc(100% - 75%);
+        background-image: url('/assets/icons/mdi_keyboard_arrow_down.svg');
+        background-position: center; 
+    }
+
+    .slider-container #right-black-arrow{
+        right:  calc(100% - 75%);
+        background-image: url('/assets/icons/right-arrow.svg');
+        background-position: center;
+    }
+    
+    .recommended {
+        position: absolute;
+        width: 120px;
+        height: 31px;
+        left: calc(50% - 60px);
+        top: calc(-15px);
+        background-color: var(--bitcoin-orange);
+        color: var(--just-white);
+        border-radius: 8px;
+        font-size: 1.2rem;
+        padding: 6px;
+        font-weight: 500;
+    }
+
+    .plan-card--title {
+        padding-top: 30px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+    }
+
+    .plan-card--price {
+        padding: 5px 0;
+        font-size: 5.2rem;
+        font-weight: bold;
+        line-height: 5.3rem;
+    }
+
+    .plan-card--price span {
+        font-size: 1.2rem;
+        font-weight: bold;
+        vertical-align: 25px;
+        margin-right: 5px;
+    }
+
+    .plan-card--saving {
+        color: var(--grey-text);
+        font-size: 1.2rem;
+        margin-bottom: 16px;
+        font-weight: 500;
+    }
+
+    .plan-card--ca {
+        background-color: var(--off-white);
+        border: 2px solid var(--bitcoin-orange);
+        color: var(--warm-black);
+        font-size: 1.4rem;
+        font-weight: bold;
+        line-height: 1.8rem;
+        padding: 12px 16px 12px 16px;
+        margin-bottom: 24px;
+        border-radius: 5px;
+        font-family: "DM Sans", sans-serif;
+    }
+
+    .plan-card--ca span {
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        background-image: url('/assets/icons/orange-right-arrow.svg');
+        vertical-align: text-bottom;
+    }
+
+    .footer {
+        display: flex;
+    }
+
+   
+       
+        
+
+    
 
 
 
